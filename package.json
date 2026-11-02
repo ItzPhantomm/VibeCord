@@ -1,0 +1,66 @@
+{
+  "name": "vibecord",
+  "version": "1.0.0",
+  "description": "Universal Discord tool layer and Model Context Protocol (MCP) server for AI coding agents",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "vibecord": "./bin/vibecord.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ItzPhantomm/VibeCord.git"
+  },
+  "homepage": "https://github.com/ItzPhantomm/VibeCord#readme",
+  "bugs": {
+    "url": "https://github.com/ItzPhantomm/VibeCord/issues"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "node dist/cli/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "discord",
+    "mcp",
+    "model-context-protocol",
+    "antigravity",
+    "claude-code",
+    "codex",
+    "hermes",
+    "cursor",
+    "windsurf",
+    "automation",
+    "server-management",
+    "ai-agents"
+  ],
+  "author": "ItzPhantomm",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^15.0.0",
+    "discord.js": "^14.27.0",
+    "dotenv": "^18.0.9",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/prompts": "^2.4.9",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
